@@ -1,0 +1,16 @@
+.top{
+                	position: fixed;
+             		right: 8px;
+                	bottom: 7px;
+                	background-image: url('/res/top.jpg');
+                	height: 55px;
+                	width: 55px;
+                	border-radius: 27px;
+                	box-shadow: 2px 2px 2px #888888;
+                	-webkit-transition-duration: 0.8s;
+                	outline: none;
+			z-index: 3;
+}
+.top:hover{
+               		 background-image: url('/res/jt2.jpg');
+}

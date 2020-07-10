@@ -1,0 +1,188 @@
+<!DOCUMENT html>
+<html>
+     <head>
+      <meta charset='utf-8'>
+      <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+      <style>
+	   *{
+		padding: 0px;
+	   	margin: 0px;	
+	   }
+           .main-container{
+                width: 100%;
+                height: 400%;
+		background-color: #9E9E9E;
+           }
+           .header-div{
+		height: 30px;
+		width: 100%;
+		background-color: gray;
+                margin: 0px;
+		padding: 0px;
+		position: relative;
+	   }
+           .space{
+	 	height: 30px;
+		width: 985px;
+		float: left;
+	   }
+           a{
+		text-decoration: initial;
+		color: black;
+	   }
+	   .slipt-line{
+		height: 100%;
+		width: 1px;
+	 	background: -webkit-gradient(linear,0 0,0 100%,from(gray),color-stop(0.5,#A9A9A9),to(gray));
+		float: left;
+	   }
+           .a{
+		height: 26px;
+                float: left;
+                padding-left: 7px;
+		padding-top: 4px;
+		padding-right: 7px;
+		-webkit-transition-duration: 0.4s;
+           }
+           .a:hover{
+		background-color: #A9A9A9;
+	   }
+	   .interduce-container{
+		height: 300px;
+		width: 100%;
+		background-color: black;
+                float: left;
+	   }
+           h1{
+		color: white;
+                padding-top: 90px;
+		padding-left: 450px;
+	   }
+	   footer{
+		background-color: gray;
+		height: 200px;
+		width: 100%;
+           }
+           nav{
+		float: left;
+	   }
+	   .porteldoor-first{
+		padding-top: 5px;
+	   }
+           .porteldoor,.porteldoor-first{
+		padding-left: 50px;
+	   }
+	   .porteldoor-a{
+		text-size: 5px;
+		-webkit-transition-duration: 0.1s;
+	   }
+	   .porteldoor-a:hover{
+		color: webkit-link;
+	   }
+           .word{
+		padding-top: 3px;
+		padding-left: 10px;
+                
+	   }
+	   .page{
+		height: 400px;
+		width: 725px;
+		background-color: white;
+		margin-left: 275px;
+		-webkit-box-shadow: 2px 2px 20px #888;
+	    	border-radius: 8px;
+		outline: none;
+	    }
+	    .space2{
+		height: 40px;
+		width: 100%;
+	    }
+	    .page-img-container{
+		width: 100%;
+		height: 200px;
+	    }
+	    .page-img{
+		padding-top: 20px;
+	    }
+	    .page-splitline{
+		width: 100%;
+		height: 1px;
+		background: linear-gradient(to right,#DCDCDC,gray,#DCDCDC);
+	    }
+	    .page-intrduce{
+		align-content: flex-start;
+		font-size: 20px;
+	    }
+	    .page-intrduce-text{
+		padding: 10px;
+	    }
+            .top{
+                position: fixed;
+                right: 8;
+                bottom: 7;
+                background-image: url('/res/top.jpg');
+                height: 55px;
+                width: 55px;
+                border-radius: 27px;
+                -box-shadow: 2px 2px 2px #888888;
+                -webkit-transition-duration: 0.8s;
+                outline: none;
+           }
+           .top:hover{
+                background-image: url('/res/jt2.jpg');
+           }
+
+      </style>	
+     </head>
+     <body>
+          <div class="header-div">
+	  	<nav>
+			<div class="space">
+			<div class="word"><a href="/index2.html">IOS斗罗大陆工作室</a></div>
+			</div>
+	        	<div class="a"><a href="/pages2.html">作品</a></div>
+                        <div class="slipt-line"></div>
+			<!--<div class="a"><a href="/downloads.html">Downloads</a></div>-->
+                </nav>
+          </div>
+	  <div class="main-container">
+		<div class="space2"></div>
+		<button class="page" onclick="javascript:jump(1)">
+			<div>
+				<div class="page-img-container">
+					<img src="https://static.codemao.cn/kitten/HyWCgNZoTI" class="page-img" style="padding-top: 0px;margin-bottom: 200px;height: 200px;width: 300px;"></img>
+				</div>
+				<div class="page-splitline"></div>
+				<div class="page-intrduce">
+					<span class="page-intrduce-text">乒乓球（含AI）</span>
+				</div>
+			</div>
+		</button>
+		
+		<button class="top" onclick="javascript:toTop()" style="display: none;">
+                </button>
+	  </div>
+	  <footer>
+          </footer>
+	  <script>
+		function jump(loc){
+		        switch(loc){
+				case 1:
+					window.location.href="https://shequ.codemao.cn/work/51386135";
+					break;
+			}
+    		}
+		function toTop(){
+                        window.location.href="/pages2.html#";
+                }
+                $(window).scroll(function(){
+                        if(!($(window).scrollTop() >= 200)){
+                                $(".top").hide();
+                        }else{
+                                $(".top").show();
+                        }
+                });
+
+	  </script>
+     </body>
+</html>	

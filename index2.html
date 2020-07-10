@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Index Page. </title>
+  <meta charset="utf-8"/>
+  <link href="/styles/top.css" type="text/css" rel="stylesheet"/>
+  <link href="/styles/lables.css" rel="stylesheet" media="screen" type="text/css">
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <style>
+
+    * { margin: 0; padding: 0 }
+
+    html,body { 
+	height: 200%; 
+    	//overflow: hidden;
+    	background-color: #9E9E9E;
+    }
+
+    body {
+      //background-image: url(./bg-img.jpg);
+      //background-repeat: no-repeat;
+      //background-size: cover;
+    }
+
+    #can { 
+	//border: 1px solid #0F0;
+    	position: absolute;
+    	top: 30px;
+	left: 0px;
+	z-index: 0;
+    }
+    .header{
+	width: 100%;
+	height: 30px;
+	background-color: #3E3E3E;
+	float: right;
+    }
+    .main-container{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+    	width: 100%;
+	height: 100%;
+        z-index: 1;
+    }
+    .top-img{
+	background-image: url("bg-img.jpg");
+	background-size: cover;
+	height: 400px;
+	width: 100%;
+    }
+    .title{
+	color: white;
+	padding-top: 150px;
+	padding-left: 30%;
+    }
+    .top-div{
+	z-index: 2;
+    }
+    .block-title{
+	height: 75px;
+	width: 75px;
+	box-shadow: 2px 2px 10px #666;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 47.5%;
+	margin-top: 100px;
+	transform: rotate(-45deg);
+	font-size: 20px;
+	background-color: #9E9E9E;
+	margin-top: 20px;
+    }
+    .block-title-text{
+	-moz-transform: rotate(45deg);
+	margin-top: 15px;
+	margin-right: 10px;
+	text-align:center;
+    }
+    .block-content-text{
+	margin-top: 50px;
+	margin-left: 20%;
+    }
+    .block{
+	background-color: white;
+    	width: 40%;
+	padding-right: 5%;
+	margin-left: 28%;
+	height: 320px;
+	margin-top: 100px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 20px #666;
+    }
+    .split-tobottom{
+	width: 1px;
+	height: 100%;
+	background-image: linear-gradient(#3E3E3E,#1E1E1E,#3E3E3E);
+	float: left;
+    }
+    .a{
+	height: 100%;
+	padding: 5px;
+	padding-top: 2px;
+	color: black;
+	text-decoration: none;
+    	float: left;
+    }
+    .a:hover{
+	background-color: #2E2E2E;
+    	transition-duration: 0.3s;
+    }
+    .tabs{
+	margin-left: 7%;
+    }
+    .footer{
+	position: absolute;
+	z-index: 2;
+	top: 400%;
+	background-color: #3E3E3E;
+	width: 100%;
+	height: 200px;
+    }
+    .head{
+	height: 125px;
+	width: 100px;
+    	margin-top: 10px;
+     }
+    .owner{
+	padding-top: 100px;
+	font-size: 1.5em;
+	margin-left: 38%; 
+     }
+     .owner-head{
+	margin-left: 43%;
+	margin-bottom: 10px;
+     }
+     .owner2{
+        padding-top: 100px;
+        font-size: 1em;
+        margin-left: 80px;
+     }
+     .owner2-head{
+        margin-left: 100px;
+        margin-bottom: 10px;
+     }
+     .concat-us{
+	margin-top: 20px;
+	margin-left: 20px;
+     }
+  </style>
+</head>
+<body>
+  <header class="header">
+	<div style="margin-left: 80%;" class="split-tobottom"></div>
+	<a class="a" href="/pages2.html">作品</a>
+	<div class="split-tobottom"></div>
+  </header>
+  <div class="main-container">
+	<div class="top-div">
+		<a href="https://shequ.codemao.cn/work_shop/1313" style="text-decoration: none;">
+			<div class="top-img">
+				<h1 class="title">欢迎来到IOS斗罗大陆工作室的主页</h1>
+			</div>
+		</a>
+	</div>
+	<div class="content-div">
+		<div class="block">
+			<div style="width: 100%;height: 10px;"></div>
+			<div class="block-title">
+				<span class="block-title-text">基本信息</span>
+			</div>
+			<div class="block-content">
+				<p class="block-content-text">
+                                        创建日期：2020年4月20日<br>
+                                        合作伙伴：凉屋工作室<br>
+                                        分室：PRODUCTIONS工作室、香肠工作室<br>
+                                        师傅：虚拟共和国<br>
+                                        徒弟：ZRT工作室、NANA工作室、smile柠凉工作室<br>
+                                        等级：1
+				</p>
+			</div>
+		</div>
+		<div style="height: 400px;" class="block">
+                        <div style="width: 100%;height: 10px;"></div>
+                        <div class="block-title">
+                                <span class="block-title-text">研究方向</span>
+                        </div>
+                        <div class="block-content">
+                            	<article class="tabs">
+					<input checked id="one" name="tabs" type="radio">
+					<label for="one">编程猫</label>
+					<input id="two" name="tabs" type="radio" value="Two">
+					<label for="two">Python</label>
+					<div class="panels">
+						<div class="panel">
+							<h2>This is Panel One</h2>
+							<p>This is Panel One</p>
+						</div>
+						<div class="panel">
+							<h2>This is Panel Two</h2>
+							<p>this is panel two</p>
+						</div>
+					</div>
+				</article>    
+                        </div>
+                </div>
+		<div class="block" style="height: 600px">
+                        <div style="width: 100%;height: 10px;"></div>
+                        <div class="block-title">
+                                <span class="block-title-text">现有人员</span>
+                        </div>
+                        <div class="block-content">
+               			<div style="width: 100%;height: 50px;"></div>
+		                <span class="owner">室长：IS小夏熠</span><br>
+				<img class="head owner-head" src="https://static.codemao.cn/Fh6hQARWUYO0cbYMo6wWwuV2ypz_"></img><br>
+				<span class="owner2">副室长：YHS_编程</span>
+				<span class="owner2">副室长：BSlsk666666</span>
+				<img class="head owner2-head" src="https://static.codemao.cn/FgqNUNr9LhAjNF0-uu7L8Ae3jT23"></img>
+				<img class="head owner2-head" style="margin-left: 125px;" src="https://static-platform.codemao.cn/avatar/default/v1_user_001.png"></img>		
+                        </div>
+                </div>
+	</div>
+  </div>
+  <footer class="footer">
+	<div class="concat-us">
+		<span>联系我们:</span><br>
+		<span style="margin-top: 10px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp室长QQ：1709211778</span><br>
+		<a class="a" style="margin-left: 20px;margin-top: 10px;" href="https://shequ.codemao.cn/work_shop/1313">工作室链接</a>
+	</div>
+  </footer>
+  <button class="top" onclick="javascript:toTop()" style="display: none;">
+  </button>
+  <canvas id='can'></canvas>
+  <script>
+
+    let ParticleAnimation = function (opts, func) {
+
+      (function (proto, funcs) { for(var key in funcs) { proto[key] = funcs[key] } })(
+
+      ParticleAnimation.prototype, {
+
+        paintingTool () {
+
+          // 获取 Canvas 的绘画工具
+          return this.ctx = this.canvas.getContext('2d');
+        },
+
+        getRandomNum (min, max) {
+
+          // 获取一个指定区间的随机数
+          return Math.random() * (max - min + 1) + min;
+        },
+
+        getDistances (x1, y1, x2, y2) {
+
+          // 计算两点间的距离: 勾股定理 => a²+b²=c²
+          // 计算距离公式： AB2=|20-（-20）|2+|（-10）-20|2=2500 所以 |AB| = 50。
+          // 勾股定理是一个基本的几何定理，指直角三角形的两条直角边的平方和等于斜边的平方。
+          return Math.sqrt( Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+        },
+
+        getCanvasElem () {
+          this.canvas = document.getElementById(opts.slice(1));
+        },
+
+        setCanvasSize () {
+
+          // 设置Canvas 尺寸 / 可视区域大小
+          this.canvas.width  = null || document.body.clientWidth;
+          this.canvas.height = null || document.body.clientHeight;
+
+          // 注册窗口重置事件， 当窗口大小发生改变时重新设置 Canvas 的尺寸
+          window.onresize = (function () { this.setCanvasSize() } ).bind(this);
+        },
+
+        createCanDots () {
+
+          // 指定一个用来存放粒子的数组
+          this.dots = [];
+
+          var
+          canvas = this.canvas,
+          random = this.getRandomNum;
+
+          // 循环创建粒子，将其添加到数组中
+          for(var i = 0; i < 384; i++) {
+
+            this.dots.push({
+
+              // 粒子坐标 随机生成
+              ox: random(0, canvas.width),
+              oy: random(0, canvas.height),
+
+              // 移动速度 随机生成
+              xs: random(-1, 1),
+              ys: random(-1, 1)
+            })
+          }
+        },
+
+        setMouseHover () {
+
+          this.canvas.onmousemove = event =>{
+
+            var
+
+            temp = [0, 0],
+            dots = this.dots,
+
+            // 当前鼠标的坐标值
+            mouseX = event.offsetX,
+            mouseY = event.offsetY;
+
+            // 将第一个粒子的坐标与当前鼠标的坐标进行计算，得到的距离存放到temp中
+            temp[0] = this.getDistances(mouseX, mouseY, dots[0].ox, dots[0].oy);
+
+            for(var i = 0; i < dots.length; i++) {
+
+              // 遍历数组中的粒子，找到与鼠标最近的一个粒子，将其在数组中的下标
+              // 存放到 temp 临时变量中，该粒的坐标后会随鼠标坐标的变化而变化
+
+              var dist = this.getDistances(mouseX, mouseY, dots[i].ox, dots[i].oy);
+              dist < temp[0] ? ( temp[0] = dist, temp[1] = i) : null;
+            }
+
+            // 更新该粒子的坐标
+            dots[temp[1]].ox = event.offsetX;
+            dots[temp[1]].oy = event.offsetY;
+
+            // 鼠标的索引
+            this.dIdx = temp[1];
+
+            // 鼠标的运动状态
+            this.mouseState = !0;
+
+            // 清除上一个定时器
+            clearTimeout(this.timer);
+
+            // 如果鼠标停止运动， 则修改当前鼠标的运动状态为 False
+            this.timer = setTimeout( e => this.mouseState = !1, 100);
+          }
+        },
+
+        drawLines (ctx, strokeStyle, x1, y1, x2, y2) {
+
+          // 开启路径
+          ctx.beginPath();
+
+          // 设置样式
+          ctx.lineWidth = 5;
+          ctx.strokeStyle = strokeStyle;
+
+          // 绘制线条
+          ctx.moveTo(x1, y1);
+          ctx.lineTo(x2, y2);
+          ctx.stroke();
+        },
+
+        drawLittleDots (ctx, dot) {
+
+          // 绘制小圆点
+          ctx.beginPath();
+          ctx.fillStyle = '#FFF';
+          ctx.arc(dot.ox, dot.oy, 8, 0, Math.PI*2, true);
+          // .arc(x, y, r, startAngle, endAngle, counterclockwise);
+
+          ctx.fill();
+        },
+
+        drawLineBetweenMDots (ctx, dot){
+
+          // 鼠标点的粒子坐标
+          var
+          dotOx = this.dots[this.dIdx || 0].ox,
+          dotOy = this.dots[this.dIdx || 0].oy,
+
+          // 计算粒子到鼠标点的距离
+          oDist = this.getDistances(dot.ox, dot.oy, dotOx, dotOy);
+
+          // 鼠标移动时; 如果粒子的到鼠标的距离小于 150, 则将该粒子向鼠标靠拢
+          if(this.mouseState && oDist <= 150){
+
+            if( oDist > (150 * .8) ){
+
+              // 更新粒子坐标，让其向鼠标方向移动
+              dot.ox -= (dot.ox - dotOx) *.038;
+              dot.oy -= (dot.oy - dotOy) *.038;
+            }
+
+            // 绘制粒子到鼠标间的线条
+            this.drawLines(ctx, '#F00', dot.ox, dot.oy, dotOx, dotOy);
+          }
+        },
+
+        drawLineBetweenTDots (ctx, dot) {
+
+          // 遍历数组中所有粒子，对其进行连线操作
+          for(var i = 0; i < this.dots.length; i++) {
+
+            var
+
+            // 内层循环中的粒子坐标
+            dotCx = this.dots[i].ox,
+            dotCy = this.dots[i].oy,
+
+            // 计算两个粒子之间的距离
+            cDist = this.getDistances(dot.ox, dot.oy, dotCx, dotCy);
+
+            // 若两个粒子间的距离小于 100, 则将其连线
+            if(this.dots[i] != dot && cDist < 100){
+
+              // 线条颜色 'rgba(*, *, *, ${线条透明度})'
+              var strokeStyle = `rgba(25, 250, 250, ${(100 - cDist) * .01})`;
+
+              // 绘制两个粒子间的线条
+              this.drawLines(ctx, strokeStyle, dot.ox, dot.oy, dotCx, dotCy);
+            }
+
+
+          }
+        },
+
+        startBlinking () {
+
+          // 得到绘图工具
+          let ctx = this.ctx || this.paintingTool();
+
+          // 清空上一帧绘制的图形
+          ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+          // 遍历数组中的所有粒子，每一帧动画的处理逻辑
+          this.dots.forEach(function (dot, idx) {
+
+            // 让粒子进行位移
+            // 新坐标 = 旧坐标 + 速度
+            dot.ox += dot.xs;
+            dot.oy += dot.ys;
+
+            // 粒子遇到边界做反弹处理
+            dot.xs *= (dot.ox > this.canvas.width  || dot.ox < 0) ? -1 : 1;
+            dot.ys *= (dot.oy > this.canvas.height || dot.oy < 0) ? -1 : 1;
+
+            // 在两个粒子之间画一条线
+            this.drawLineBetweenTDots(ctx, dot);
+
+            // 在鼠标粒子之间画一条线
+            this.drawLineBetweenMDots(ctx, dot);
+
+            // 在画布上绘制小圆点
+            this.drawLittleDots(ctx, dot);
+
+          }, this)
+
+          // 执行帧动画
+          // 该方法等同于: setTimeout( e => this.startBlinking(), 1000 / 60);
+          window.requestAnimationFrame( this.startBlinking.bind(this) );
+        }
+      });
+
+      func.call(this);
+    }
+
+    new ParticleAnimation('#can', function () {
+      this.getCanvasElem();   // 获取当前画布
+      this.setCanvasSize();   // 设置画布尺寸
+      this.createCanDots();   // 创建粒子对象
+      this.startBlinking();   // 执行粒子动画
+      this.setMouseHover();   // 鼠标移动状态 
+    });
+
+  </script>
+  <script>
+  	function toTop(){
+       		window.location.href="/index2.html#";
+	}
+	$(window).scroll(function(){
+                        if(!($(window).scrollTop() >= 200)){
+                                $(".top").hide();
+                        }else{
+                                $(".top").show();
+                        }
+        });
+
+  </script>
+  <script>
+	function load(){
+		let windowHeight = $(window).height();
+		console.log(windowHeight)
+		var footer = document.getElementById("footer");
+		footer.style.top = (windowHeight - parseInt(footer.style.height)) + "px";
+	}
+	window.addEventListener("load",load,true);
+   </script>
+</body>
+</html>
