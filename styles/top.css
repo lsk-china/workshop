@@ -2,7 +2,7 @@
                 	position: fixed;
              		right: 8px;
                 	bottom: 7px;
-                	background-image: url('/res/top.jpg');
+                	background-image: url('/workshop/res/top.jpg');
                 	height: 55px;
                 	width: 55px;
                 	border-radius: 27px;
@@ -12,5 +12,5 @@
 			z-index: 3;
 }
 .top:hover{
-               		 background-image: url('/res/jt2.jpg');
+               		 background-image: url('/workshop/res/jt2.jpg');
 }
