@@ -347,7 +347,11 @@
   </script>
   <script>
 	function load(){
-		//window.resizeTo(1374,634);
+		if($(window).width > 729){
+			$(".owner2-container").css("margin-left","10%");
+		}else{
+			$(".owner2-container").css("margin-left","0%");
+		}
 	}
 	window.addEventListener("load",load,true);
    </script>
