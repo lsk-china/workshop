@@ -4,7 +4,7 @@
 	height: 200%; 
     	//overflow: hidden;
     	background-color: #9E9E9E;
-	width: 1374px;
+	//width: 1374px;
     }
 
     body {
@@ -124,7 +124,6 @@
      }
      .owner-head{
 	margin-left: 43%;
-	margin-bottom: 10px;
      }
      .owner2{
         padding-top: 100px;
@@ -133,9 +132,11 @@
      }
      .owner2-head{
         margin-left: 100px;
-        margin-bottom: 10px;
      }
      .concat-us{
 	margin-top: 20px;
 	margin-left: 20px;
+     }
+     .owner2-container{
+	float: left;
      }
